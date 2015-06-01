@@ -1,12 +1,7 @@
 /*
- * Authors:
- *  Landon Fuller <landonf@plausiblelabs.com>
- *  Damian Morris <damian@moso.com.au>
- *  Andreas Linde <mail@andreaslinde.de>
+ * Author: Landon Fuller <landonf@plausible.coop>
  *
  * Copyright (c) 2008-2013 Plausible Labs Cooperative, Inc.
- * Copyright (c) 2010 MOSO Corporation, Pty Ltd.
- * Copyright (c) 2012-2014 HockeyApp, Bit Stadium GmbH.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person
@@ -31,22 +26,27 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
 #import <Foundation/Foundation.h>
-#import "CrashReporter.h"
 
-// Dictionary keys for array elements returned by arrayOfAppUUIDsForCrashReport:
-#ifndef kBWBinaryImageKeyUUID
-#define kBWBinaryImageKeyUUID @"uuid"
-#define kBWBinaryImageKeyArch @"arch"
-#define kBWBinaryImageKeyType @"type"
-#endif
-
-
-@interface BWCrashReportTextFormatter : NSObject {
+@interface PLCrashReportRegisterInfo : NSObject {
+@private
+    /** Register name */
+    NSString *_registerName;
+    
+    /** Register value */
+    uint64_t _registerValue;
 }
 
-+ (NSString *)stringValueForCrashReport:(PLCrashReport *)report crashReporterKey:(NSString *)crashReporterKey;
-+ (NSArray *)arrayOfAppUUIDsForCrashReport:(PLCrashReport *)report;
+- (id) initWithRegisterName: (NSString *) registerName registerValue: (uint64_t) registerValue;
+
+/**
+ * Register name.
+ */
+@property(nonatomic, readonly) NSString *registerName;
+
+/**
+ * Register value.
+ */
+@property(nonatomic, readonly) uint64_t registerValue;
 
 @end

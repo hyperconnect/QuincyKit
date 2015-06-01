@@ -1,12 +1,7 @@
 /*
- * Authors:
- *  Landon Fuller <landonf@plausiblelabs.com>
- *  Damian Morris <damian@moso.com.au>
- *  Andreas Linde <mail@andreaslinde.de>
+ * Author: Landon Fuller <landonf@plausible.coop>
  *
  * Copyright (c) 2008-2013 Plausible Labs Cooperative, Inc.
- * Copyright (c) 2010 MOSO Corporation, Pty Ltd.
- * Copyright (c) 2012-2014 HockeyApp, Bit Stadium GmbH.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person
@@ -31,22 +26,27 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
 #import <Foundation/Foundation.h>
-#import "CrashReporter.h"
+#import "PLCrashReportSymbolInfo.h"
 
-// Dictionary keys for array elements returned by arrayOfAppUUIDsForCrashReport:
-#ifndef kBWBinaryImageKeyUUID
-#define kBWBinaryImageKeyUUID @"uuid"
-#define kBWBinaryImageKeyArch @"arch"
-#define kBWBinaryImageKeyType @"type"
-#endif
+@interface PLCrashReportStackFrameInfo : NSObject {
+@private
+    /** Frame instruction pointer. */
+    uint64_t _instructionPointer;
 
-
-@interface BWCrashReportTextFormatter : NSObject {
+    /** Symbol information, if available. Otherwise, will be nil. */
+    PLCrashReportSymbolInfo *_symbolInfo;
 }
 
-+ (NSString *)stringValueForCrashReport:(PLCrashReport *)report crashReporterKey:(NSString *)crashReporterKey;
-+ (NSArray *)arrayOfAppUUIDsForCrashReport:(PLCrashReport *)report;
+- (id) initWithInstructionPointer: (uint64_t) instructionPointer symbolInfo: (PLCrashReportSymbolInfo *) symbolInfo;
+
+/**
+ * Frame's instruction pointer.
+ */
+@property(nonatomic, readonly) uint64_t instructionPointer;
+
+/** Symbol information for this frame.
+ * This may be unavailable, and this property will be nil. */
+@property(nonatomic, readonly) PLCrashReportSymbolInfo *symbolInfo;
 
 @end

@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C0A73AF1B16B00300E0E9EA /* QuincyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0A73AE1B16B00300E0E9EA /* QuincyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27A81B16B8B500553B49 /* BWCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A04977671602AF6600DDF6BF /* BWCrashReportTextFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27A91B16B8B800553B49 /* BWQuincyManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E584C1A1883306000C4D800 /* BWQuincyManagerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27AA1B16B8BC00553B49 /* BWQuincyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36908F24145ECB370070379E /* BWQuincyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27DE1B16BDD800553B49 /* CrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B11B16BD5A00553B49 /* CrashReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27DF1B16BDEB00553B49 /* PLCrashAsyncSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B21B16BD5A00553B49 /* PLCrashAsyncSignalInfo.h */; };
+		2CEE27E01B16BDEB00553B49 /* PLCrashFeatureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B31B16BD5A00553B49 /* PLCrashFeatureConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E11B16BDEB00553B49 /* PLCrashNamespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B41B16BD5A00553B49 /* PLCrashNamespace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E21B16BDEB00553B49 /* PLCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B51B16BD5A00553B49 /* PLCrashReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E31B16BDEB00553B49 /* PLCrashReportApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B61B16BD5A00553B49 /* PLCrashReportApplicationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E41B16BDEB00553B49 /* PLCrashReportBinaryImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B71B16BD5A00553B49 /* PLCrashReportBinaryImageInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E51B16BDEB00553B49 /* PLCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B81B16BD5A00553B49 /* PLCrashReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E61B16BDEB00553B49 /* PLCrashReporterConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27B91B16BD5A00553B49 /* PLCrashReporterConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E71B16BDEB00553B49 /* PLCrashReportExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27BA1B16BD5A00553B49 /* PLCrashReportExceptionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E81B16BDEB00553B49 /* PLCrashReportFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27BB1B16BD5A00553B49 /* PLCrashReportFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27E91B16BDEB00553B49 /* PLCrashReportMachExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27BC1B16BD5A00553B49 /* PLCrashReportMachExceptionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27EA1B16BDEB00553B49 /* PLCrashReportMachineInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27BD1B16BD5A00553B49 /* PLCrashReportMachineInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27EB1B16BDEB00553B49 /* PLCrashReportProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27BE1B16BD5A00553B49 /* PLCrashReportProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27EC1B16BDEB00553B49 /* PLCrashReportProcessorInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27BF1B16BD5A00553B49 /* PLCrashReportProcessorInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27ED1B16BDEB00553B49 /* PLCrashReportRegisterInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27C01B16BD5A00553B49 /* PLCrashReportRegisterInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27EE1B16BDEB00553B49 /* PLCrashReportSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27C11B16BD5A00553B49 /* PLCrashReportSignalInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27EF1B16BDEB00553B49 /* PLCrashReportStackFrameInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27C21B16BD5A00553B49 /* PLCrashReportStackFrameInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27F01B16BDEB00553B49 /* PLCrashReportSymbolInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27C31B16BD5A00553B49 /* PLCrashReportSymbolInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27F11B16BDEB00553B49 /* PLCrashReportSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27C41B16BD5A00553B49 /* PLCrashReportSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27F21B16BDEB00553B49 /* PLCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27C51B16BD5A00553B49 /* PLCrashReportTextFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27F31B16BDEB00553B49 /* PLCrashReportThreadInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE27C61B16BD5A00553B49 /* PLCrashReportThreadInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEE27F41B16BFEE00553B49 /* BWCrashReportTextFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A04977681602AF6600DDF6BF /* BWCrashReportTextFormatter.m */; };
+		2CEE27F51B16BFEE00553B49 /* BWQuincyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36908F22145ECB2E0070379E /* BWQuincyManager.m */; };
+		2CEE27F61B16C01100553B49 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36908F1F145ECB090070379E /* CrashReporter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E584C1A1883306000C4D800 /* BWQuincyManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWQuincyManagerDelegate.h; path = ../BWQuincyManagerDelegate.h; sourceTree = "<group>"; };
+		2C0A73AA1B16B00200E0E9EA /* QuincyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuincyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0A73AD1B16B00300E0E9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0A73AE1B16B00300E0E9EA /* QuincyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuincyKit.h; sourceTree = "<group>"; };
+		2C0A73BA1B16B00300E0E9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0A73BB1B16B00300E0E9EA /* QuincyKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuincyKitTests.m; sourceTree = "<group>"; };
+		2CEE27B11B16BD5A00553B49 /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrashReporter.h; path = ../CrashReporter.h; sourceTree = "<group>"; };
+		2CEE27B21B16BD5A00553B49 /* PLCrashAsyncSignalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncSignalInfo.h; path = ../PLCrashAsyncSignalInfo.h; sourceTree = "<group>"; };
+		2CEE27B31B16BD5A00553B49 /* PLCrashFeatureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashFeatureConfig.h; path = ../PLCrashFeatureConfig.h; sourceTree = "<group>"; };
+		2CEE27B41B16BD5A00553B49 /* PLCrashNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashNamespace.h; path = ../PLCrashNamespace.h; sourceTree = "<group>"; };
+		2CEE27B51B16BD5A00553B49 /* PLCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReport.h; path = ../PLCrashReport.h; sourceTree = "<group>"; };
+		2CEE27B61B16BD5A00553B49 /* PLCrashReportApplicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportApplicationInfo.h; path = ../PLCrashReportApplicationInfo.h; sourceTree = "<group>"; };
+		2CEE27B71B16BD5A00553B49 /* PLCrashReportBinaryImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportBinaryImageInfo.h; path = ../PLCrashReportBinaryImageInfo.h; sourceTree = "<group>"; };
+		2CEE27B81B16BD5A00553B49 /* PLCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReporter.h; path = ../PLCrashReporter.h; sourceTree = "<group>"; };
+		2CEE27B91B16BD5A00553B49 /* PLCrashReporterConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReporterConfig.h; path = ../PLCrashReporterConfig.h; sourceTree = "<group>"; };
+		2CEE27BA1B16BD5A00553B49 /* PLCrashReportExceptionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportExceptionInfo.h; path = ../PLCrashReportExceptionInfo.h; sourceTree = "<group>"; };
+		2CEE27BB1B16BD5A00553B49 /* PLCrashReportFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportFormatter.h; path = ../PLCrashReportFormatter.h; sourceTree = "<group>"; };
+		2CEE27BC1B16BD5A00553B49 /* PLCrashReportMachExceptionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportMachExceptionInfo.h; path = ../PLCrashReportMachExceptionInfo.h; sourceTree = "<group>"; };
+		2CEE27BD1B16BD5A00553B49 /* PLCrashReportMachineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportMachineInfo.h; path = ../PLCrashReportMachineInfo.h; sourceTree = "<group>"; };
+		2CEE27BE1B16BD5A00553B49 /* PLCrashReportProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportProcessInfo.h; path = ../PLCrashReportProcessInfo.h; sourceTree = "<group>"; };
+		2CEE27BF1B16BD5A00553B49 /* PLCrashReportProcessorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportProcessorInfo.h; path = ../PLCrashReportProcessorInfo.h; sourceTree = "<group>"; };
+		2CEE27C01B16BD5A00553B49 /* PLCrashReportRegisterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportRegisterInfo.h; path = ../PLCrashReportRegisterInfo.h; sourceTree = "<group>"; };
+		2CEE27C11B16BD5A00553B49 /* PLCrashReportSignalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportSignalInfo.h; path = ../PLCrashReportSignalInfo.h; sourceTree = "<group>"; };
+		2CEE27C21B16BD5A00553B49 /* PLCrashReportStackFrameInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportStackFrameInfo.h; path = ../PLCrashReportStackFrameInfo.h; sourceTree = "<group>"; };
+		2CEE27C31B16BD5A00553B49 /* PLCrashReportSymbolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportSymbolInfo.h; path = ../PLCrashReportSymbolInfo.h; sourceTree = "<group>"; };
+		2CEE27C41B16BD5A00553B49 /* PLCrashReportSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportSystemInfo.h; path = ../PLCrashReportSystemInfo.h; sourceTree = "<group>"; };
+		2CEE27C51B16BD5A00553B49 /* PLCrashReportTextFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportTextFormatter.h; path = ../PLCrashReportTextFormatter.h; sourceTree = "<group>"; };
+		2CEE27C61B16BD5A00553B49 /* PLCrashReportThreadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCrashReportThreadInfo.h; path = ../PLCrashReportThreadInfo.h; sourceTree = "<group>"; };
+		36892BEF145EC96A0036932D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36908F1F145ECB090070379E /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = ../CrashReporter.framework; sourceTree = "<group>"; };
+		36908F22145ECB2E0070379E /* BWQuincyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWQuincyManager.m; path = ../BWQuincyManager.m; sourceTree = "<group>"; };
+		36908F24145ECB370070379E /* BWQuincyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWQuincyManager.h; path = ../BWQuincyManager.h; sourceTree = "<group>"; };
+		A04977671602AF6600DDF6BF /* BWCrashReportTextFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWCrashReportTextFormatter.h; path = ../BWCrashReportTextFormatter.h; sourceTree = "<group>"; };
+		A04977681602AF6600DDF6BF /* BWCrashReportTextFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWCrashReportTextFormatter.m; path = ../BWCrashReportTextFormatter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C0A73A61B16B00200E0E9EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEE27F61B16C01100553B49 /* CrashReporter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C0A73AB1B16B00300E0E9EA /* QuincyKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A73AE1B16B00300E0E9EA /* QuincyKit.h */,
+				2C0A73AC1B16B00300E0E9EA /* Supporting Files */,
+			);
+			path = QuincyKit;
+			sourceTree = "<group>";
+		};
+		2C0A73AC1B16B00300E0E9EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A73AD1B16B00300E0E9EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C0A73B81B16B00300E0E9EA /* QuincyKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A73BB1B16B00300E0E9EA /* QuincyKitTests.m */,
+				2C0A73B91B16B00300E0E9EA /* Supporting Files */,
+			);
+			path = QuincyKitTests;
+			sourceTree = "<group>";
+		};
+		2C0A73B91B16B00300E0E9EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A73BA1B16B00300E0E9EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CEE27AF1B16BD4100553B49 /* CrashReporter */ = {
+			isa = PBXGroup;
+			children = (
+				2CEE27B11B16BD5A00553B49 /* CrashReporter.h */,
+				2CEE27B21B16BD5A00553B49 /* PLCrashAsyncSignalInfo.h */,
+				2CEE27B31B16BD5A00553B49 /* PLCrashFeatureConfig.h */,
+				2CEE27B41B16BD5A00553B49 /* PLCrashNamespace.h */,
+				2CEE27B51B16BD5A00553B49 /* PLCrashReport.h */,
+				2CEE27B61B16BD5A00553B49 /* PLCrashReportApplicationInfo.h */,
+				2CEE27B71B16BD5A00553B49 /* PLCrashReportBinaryImageInfo.h */,
+				2CEE27B81B16BD5A00553B49 /* PLCrashReporter.h */,
+				2CEE27B91B16BD5A00553B49 /* PLCrashReporterConfig.h */,
+				2CEE27BA1B16BD5A00553B49 /* PLCrashReportExceptionInfo.h */,
+				2CEE27BB1B16BD5A00553B49 /* PLCrashReportFormatter.h */,
+				2CEE27BC1B16BD5A00553B49 /* PLCrashReportMachExceptionInfo.h */,
+				2CEE27BD1B16BD5A00553B49 /* PLCrashReportMachineInfo.h */,
+				2CEE27BE1B16BD5A00553B49 /* PLCrashReportProcessInfo.h */,
+				2CEE27BF1B16BD5A00553B49 /* PLCrashReportProcessorInfo.h */,
+				2CEE27C01B16BD5A00553B49 /* PLCrashReportRegisterInfo.h */,
+				2CEE27C11B16BD5A00553B49 /* PLCrashReportSignalInfo.h */,
+				2CEE27C21B16BD5A00553B49 /* PLCrashReportStackFrameInfo.h */,
+				2CEE27C31B16BD5A00553B49 /* PLCrashReportSymbolInfo.h */,
+				2CEE27C41B16BD5A00553B49 /* PLCrashReportSystemInfo.h */,
+				2CEE27C51B16BD5A00553B49 /* PLCrashReportTextFormatter.h */,
+				2CEE27C61B16BD5A00553B49 /* PLCrashReportThreadInfo.h */,
+			);
+			name = CrashReporter;
+			sourceTree = "<group>";
+		};
+		36892BE1145EC96A0036932D = {
+			isa = PBXGroup;
+			children = (
+				2CEE27AF1B16BD4100553B49 /* CrashReporter */,
+				36908F21145ECB220070379E /* Classes */,
+				2C0A73AB1B16B00300E0E9EA /* QuincyKit */,
+				2C0A73B81B16B00300E0E9EA /* QuincyKitTests */,
+				36892BEE145EC96A0036932D /* Frameworks */,
+				36892BED145EC96A0036932D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36892BED145EC96A0036932D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A73AA1B16B00200E0E9EA /* QuincyKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36892BEE145EC96A0036932D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36908F1F145ECB090070379E /* CrashReporter.framework */,
+				36892BEF145EC96A0036932D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36908F21145ECB220070379E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A04977671602AF6600DDF6BF /* BWCrashReportTextFormatter.h */,
+				A04977681602AF6600DDF6BF /* BWCrashReportTextFormatter.m */,
+				1E584C1A1883306000C4D800 /* BWQuincyManagerDelegate.h */,
+				36908F24145ECB370070379E /* BWQuincyManager.h */,
+				36908F22145ECB2E0070379E /* BWQuincyManager.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C0A73A71B16B00200E0E9EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEE27EB1B16BDEB00553B49 /* PLCrashReportProcessInfo.h in Headers */,
+				2CEE27EF1B16BDEB00553B49 /* PLCrashReportStackFrameInfo.h in Headers */,
+				2C0A73AF1B16B00300E0E9EA /* QuincyKit.h in Headers */,
+				2CEE27EA1B16BDEB00553B49 /* PLCrashReportMachineInfo.h in Headers */,
+				2CEE27E81B16BDEB00553B49 /* PLCrashReportFormatter.h in Headers */,
+				2CEE27EE1B16BDEB00553B49 /* PLCrashReportSignalInfo.h in Headers */,
+				2CEE27F21B16BDEB00553B49 /* PLCrashReportTextFormatter.h in Headers */,
+				2CEE27E41B16BDEB00553B49 /* PLCrashReportBinaryImageInfo.h in Headers */,
+				2CEE27F31B16BDEB00553B49 /* PLCrashReportThreadInfo.h in Headers */,
+				2CEE27E01B16BDEB00553B49 /* PLCrashFeatureConfig.h in Headers */,
+				2CEE27E11B16BDEB00553B49 /* PLCrashNamespace.h in Headers */,
+				2CEE27DE1B16BDD800553B49 /* CrashReporter.h in Headers */,
+				2CEE27E91B16BDEB00553B49 /* PLCrashReportMachExceptionInfo.h in Headers */,
+				2CEE27E61B16BDEB00553B49 /* PLCrashReporterConfig.h in Headers */,
+				2CEE27E71B16BDEB00553B49 /* PLCrashReportExceptionInfo.h in Headers */,
+				2CEE27E21B16BDEB00553B49 /* PLCrashReport.h in Headers */,
+				2CEE27F01B16BDEB00553B49 /* PLCrashReportSymbolInfo.h in Headers */,
+				2CEE27E31B16BDEB00553B49 /* PLCrashReportApplicationInfo.h in Headers */,
+				2CEE27EC1B16BDEB00553B49 /* PLCrashReportProcessorInfo.h in Headers */,
+				2CEE27F11B16BDEB00553B49 /* PLCrashReportSystemInfo.h in Headers */,
+				2CEE27A81B16B8B500553B49 /* BWCrashReportTextFormatter.h in Headers */,
+				2CEE27ED1B16BDEB00553B49 /* PLCrashReportRegisterInfo.h in Headers */,
+				2CEE27A91B16B8B800553B49 /* BWQuincyManagerDelegate.h in Headers */,
+				2CEE27AA1B16B8BC00553B49 /* BWQuincyManager.h in Headers */,
+				2CEE27DF1B16BDEB00553B49 /* PLCrashAsyncSignalInfo.h in Headers */,
+				2CEE27E51B16BDEB00553B49 /* PLCrashReporter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C0A73A91B16B00200E0E9EA /* QuincyKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0A73C11B16B00300E0E9EA /* Build configuration list for PBXNativeTarget "QuincyKit" */;
+			buildPhases = (
+				2C0A73A51B16B00200E0E9EA /* Sources */,
+				2C0A73A61B16B00200E0E9EA /* Frameworks */,
+				2C0A73A71B16B00200E0E9EA /* Headers */,
+				2C0A73A81B16B00200E0E9EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuincyKit;
+			productName = QuincyKit;
+			productReference = 2C0A73AA1B16B00200E0E9EA /* QuincyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36892BE3145EC96A0036932D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "litl, LLC";
+				TargetAttributes = {
+					2C0A73A91B16B00200E0E9EA = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 36892BE6145EC96A0036932D /* Build configuration list for PBXProject "QuincyKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 36892BE1145EC96A0036932D;
+			productRefGroup = 36892BED145EC96A0036932D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C0A73A91B16B00200E0E9EA /* QuincyKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C0A73A81B16B00200E0E9EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C0A73A51B16B00200E0E9EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEE27F41B16BFEE00553B49 /* BWCrashReportTextFormatter.m in Sources */,
+				2CEE27F51B16BFEE00553B49 /* BWQuincyManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2C0A73BD1B16B00300E0E9EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/..",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = QuincyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C0A73BE1B16B00300E0E9EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/..",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = QuincyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C0A73C31B16B34700E0E9EA /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = QA;
+		};
+		2C0A73C51B16B34700E0E9EA /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/..",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = QuincyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		36892BF7145EC96B0036932D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		36892BF8145EC96B0036932D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C0A73C11B16B00300E0E9EA /* Build configuration list for PBXNativeTarget "QuincyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0A73BD1B16B00300E0E9EA /* Debug */,
+				2C0A73BE1B16B00300E0E9EA /* Release */,
+				2C0A73C51B16B34700E0E9EA /* QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36892BE6145EC96A0036932D /* Build configuration list for PBXProject "QuincyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36892BF7145EC96B0036932D /* Debug */,
+				36892BF8145EC96B0036932D /* Release */,
+				2C0A73C31B16B34700E0E9EA /* QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36892BE3145EC96A0036932D /* Project object */;
+}

@@ -30,7 +30,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <CrashReporter/CrashReporter.h>
+#import "CrashReporter.h"
 #import "BWQuincyManagerDelegate.h"
 
 

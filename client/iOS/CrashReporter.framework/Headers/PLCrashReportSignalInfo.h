@@ -1,12 +1,7 @@
 /*
- * Authors:
- *  Landon Fuller <landonf@plausiblelabs.com>
- *  Damian Morris <damian@moso.com.au>
- *  Andreas Linde <mail@andreaslinde.de>
+ * Author: Landon Fuller <landonf@plausiblelabs.com>
  *
- * Copyright (c) 2008-2013 Plausible Labs Cooperative, Inc.
- * Copyright (c) 2010 MOSO Corporation, Pty Ltd.
- * Copyright (c) 2012-2014 HockeyApp, Bit Stadium GmbH.
+ * Copyright (c) 2008-2009 Plausible Labs Cooperative, Inc.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person
@@ -31,22 +26,35 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
 #import <Foundation/Foundation.h>
-#import "CrashReporter.h"
 
-// Dictionary keys for array elements returned by arrayOfAppUUIDsForCrashReport:
-#ifndef kBWBinaryImageKeyUUID
-#define kBWBinaryImageKeyUUID @"uuid"
-#define kBWBinaryImageKeyArch @"arch"
-#define kBWBinaryImageKeyType @"type"
-#endif
+@interface PLCrashReportSignalInfo : NSObject {
+@private
+    /** Signal name */
+    NSString *_name;
+    
+    /** Signal code */
+    NSString *_code;
 
-
-@interface BWCrashReportTextFormatter : NSObject {
+    /** Fauling instruction or address */
+    uint64_t _address;
 }
 
-+ (NSString *)stringValueForCrashReport:(PLCrashReport *)report crashReporterKey:(NSString *)crashReporterKey;
-+ (NSArray *)arrayOfAppUUIDsForCrashReport:(PLCrashReport *)report;
+- (id) initWithSignalName: (NSString *) name code: (NSString *) code address: (uint64_t) address;
+
+/**
+ * The signal name.
+ */
+@property(nonatomic, readonly) NSString *name;
+
+/**
+ * The signal code.
+ */
+@property(nonatomic, readonly) NSString *code;
+
+/**
+ * The faulting instruction or address.
+ */
+@property(nonatomic, readonly) uint64_t address;
 
 @end

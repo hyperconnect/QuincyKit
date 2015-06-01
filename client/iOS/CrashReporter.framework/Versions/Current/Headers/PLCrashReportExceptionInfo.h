@@ -1,12 +1,7 @@
 /*
- * Authors:
- *  Landon Fuller <landonf@plausiblelabs.com>
- *  Damian Morris <damian@moso.com.au>
- *  Andreas Linde <mail@andreaslinde.de>
+ * Author: Landon Fuller <landonf@plausiblelabs.com>
  *
- * Copyright (c) 2008-2013 Plausible Labs Cooperative, Inc.
- * Copyright (c) 2010 MOSO Corporation, Pty Ltd.
- * Copyright (c) 2012-2014 HockeyApp, Bit Stadium GmbH.
+ * Copyright (c) 2008-2009 Plausible Labs Cooperative, Inc.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person
@@ -31,22 +26,40 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
 #import <Foundation/Foundation.h>
-#import "CrashReporter.h"
-
-// Dictionary keys for array elements returned by arrayOfAppUUIDsForCrashReport:
-#ifndef kBWBinaryImageKeyUUID
-#define kBWBinaryImageKeyUUID @"uuid"
-#define kBWBinaryImageKeyArch @"arch"
-#define kBWBinaryImageKeyType @"type"
-#endif
+#import "PLCrashReportThreadInfo.h"
 
 
-@interface BWCrashReportTextFormatter : NSObject {
+@interface PLCrashReportExceptionInfo : NSObject {
+@private
+    /** Name */
+    NSString *_name;
+
+    /** Reason */
+    NSString *_reason;
+
+    /** Ordered list of PLCrashReportStackFrame instances, or nil if unavailable. */
+    NSArray *_stackFrames;
 }
 
-+ (NSString *)stringValueForCrashReport:(PLCrashReport *)report crashReporterKey:(NSString *)crashReporterKey;
-+ (NSArray *)arrayOfAppUUIDsForCrashReport:(PLCrashReport *)report;
+- (id) initWithExceptionName: (NSString *) name reason: (NSString *) reason;
+
+- (id) initWithExceptionName: (NSString *) name 
+                      reason: (NSString *) reason
+                 stackFrames: (NSArray *) stackFrames;
+
+/**
+ * The exception name.
+ */
+@property(nonatomic, readonly) NSString *exceptionName;
+
+/**
+ * The exception reason.
+ */
+@property(nonatomic, readonly) NSString *exceptionReason;
+
+/* The exception's original call stack, as an array of PLCrashReportStackFrameInfo instances, or nil if unavailable.
+ * This may be preserved across rethrow of an exception, and can be used to determine the original call stack. */
+@property(nonatomic, readonly) NSArray *stackFrames;
 
 @end

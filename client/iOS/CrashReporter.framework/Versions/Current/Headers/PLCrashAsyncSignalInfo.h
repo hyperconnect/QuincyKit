@@ -1,12 +1,7 @@
 /*
- * Authors:
- *  Landon Fuller <landonf@plausiblelabs.com>
- *  Damian Morris <damian@moso.com.au>
- *  Andreas Linde <mail@andreaslinde.de>
+ * Author: Landon Fuller <landonf@plausiblelabs.com>
  *
- * Copyright (c) 2008-2013 Plausible Labs Cooperative, Inc.
- * Copyright (c) 2010 MOSO Corporation, Pty Ltd.
- * Copyright (c) 2012-2014 HockeyApp, Bit Stadium GmbH.
+ * Copyright (c) 2008-2009 Plausible Labs Cooperative, Inc.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person
@@ -31,22 +26,33 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+#ifndef PLCRASH_ASYNC_SIGNAL_INFO_H
+#define PLCRASH_ASYNC_SIGNAL_INFO_H
 
-#import <Foundation/Foundation.h>
-#import "CrashReporter.h"
-
-// Dictionary keys for array elements returned by arrayOfAppUUIDsForCrashReport:
-#ifndef kBWBinaryImageKeyUUID
-#define kBWBinaryImageKeyUUID @"uuid"
-#define kBWBinaryImageKeyArch @"arch"
-#define kBWBinaryImageKeyType @"type"
+#ifdef __cplusplus
+extern "C" {
 #endif
 
+/**
+ * @internal
+ *
+ * @defgroup plcrash_async_signal_info Signal Information
+ * @ingroup plcrash_async
+ *
+ * Provides mapping of signal number and code to strings.
+ *
+ * @{
+ */
 
-@interface BWCrashReportTextFormatter : NSObject {
+const char *plcrash_async_signal_signame (int signal);
+const char *plcrash_async_signal_sigcode (int signal, int si_code);
+
+/**
+ * @} plcrash_async_signal_info
+ */
+
+#ifdef __cplusplus
 }
+#endif
 
-+ (NSString *)stringValueForCrashReport:(PLCrashReport *)report crashReporterKey:(NSString *)crashReporterKey;
-+ (NSArray *)arrayOfAppUUIDsForCrashReport:(PLCrashReport *)report;
-
-@end
+#endif /* PLCRASH_ASYNC_SIGNAL_INFO_H */

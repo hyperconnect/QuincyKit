@@ -1,12 +1,7 @@
 /*
- * Authors:
- *  Landon Fuller <landonf@plausiblelabs.com>
- *  Damian Morris <damian@moso.com.au>
- *  Andreas Linde <mail@andreaslinde.de>
+ * Author: Landon Fuller <landonf@plausiblelabs.com>
  *
- * Copyright (c) 2008-2013 Plausible Labs Cooperative, Inc.
- * Copyright (c) 2010 MOSO Corporation, Pty Ltd.
- * Copyright (c) 2012-2014 HockeyApp, Bit Stadium GmbH.
+ * Copyright (c) 2008-2009 Plausible Labs Cooperative, Inc.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person
@@ -31,22 +26,28 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
 #import <Foundation/Foundation.h>
-#import "CrashReporter.h"
 
-// Dictionary keys for array elements returned by arrayOfAppUUIDsForCrashReport:
-#ifndef kBWBinaryImageKeyUUID
-#define kBWBinaryImageKeyUUID @"uuid"
-#define kBWBinaryImageKeyArch @"arch"
-#define kBWBinaryImageKeyType @"type"
-#endif
-
-
-@interface BWCrashReportTextFormatter : NSObject {
+@interface PLCrashReportApplicationInfo : NSObject {
+@private
+    /** Application identifier */
+    NSString *_applicationIdentifier;
+    
+    /** Application version */
+    NSString *_applicationVersion;
 }
 
-+ (NSString *)stringValueForCrashReport:(PLCrashReport *)report crashReporterKey:(NSString *)crashReporterKey;
-+ (NSArray *)arrayOfAppUUIDsForCrashReport:(PLCrashReport *)report;
+- (id) initWithApplicationIdentifier: (NSString *) applicationIdentifier 
+                  applicationVersion: (NSString *) applicationVersion;
+
+/**
+ * The application identifier. This is usually the application's CFBundleIdentifier value.
+ */
+@property(nonatomic, readonly) NSString *applicationIdentifier;
+
+/**
+ * The application version. This is usually the application's CFBundleVersion value.
+ */
+@property(nonatomic, readonly) NSString *applicationVersion;
 
 @end
