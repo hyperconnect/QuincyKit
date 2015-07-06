@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>08A9AC4F-85EB-4DFE-9542-E948552C4A88</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuincyKitOnly</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4BB832DA680CB98C5F669F92FD5426B92B4B6469</key>
+		<string>https://github.com/hyperconnect/QuincyKit</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuincyKitOnly.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4BB832DA680CB98C5F669F92FD5426B92B4B6469</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hyperconnect/QuincyKit</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4BB832DA680CB98C5F669F92FD5426B92B4B6469</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4BB832DA680CB98C5F669F92FD5426B92B4B6469</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuincyKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
